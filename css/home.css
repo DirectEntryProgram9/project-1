@@ -2,4 +2,40 @@
 
 #container {
     padding: 10px;
+    background-color: rgb(249, 249, 249);
+}
+#row-1>div {
+    float: left;
+}
+#row-1>div:first-child {
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+}
+#row-1>div:first-child>h1, #row-1>div:first-child>h2 {
+    padding-bottom: 15px;
+}
+#row-1>div:first-child>p {
+    line-height: 1.3rem;
+    padding-bottom: 25px;
+}
+#row-1>div:last-child {
+    background-image: url(https://www.ijse.lk/images/home/welcome.jpg);
+    width: 30%;
+    height: 440px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+}
+#row-2 {
+    text-align: center;
+    padding: 15px;
+    color: #444;
+}
+#row-2 span {
+    color: red;
+}
+#row-3 {
+    text-align: justify;
+    line-height: 1.3rem;
 }
