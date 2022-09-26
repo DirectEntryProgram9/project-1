@@ -1,0 +1,125 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.clear-fix {
+    clear: both;
+}
+
+/* Set typography */
+h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+h2 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+h4 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+h5 {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+h6 {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+}
+/* Layouts */
+:root {
+    --header-height: 50px;
+    --nav-width: 150px;
+    --layout-border-color: lightgrey;
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    background-color: white;
+    opacity: 0.9;
+    border-bottom: 1px solid var(--layout-border-color);
+}
+#nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    bottom: 0;
+    width: var(--nav-width);
+    border-right: 1px solid var(--layout-border-color);
+}
+#main {
+    margin-top: var(--header-height);
+    margin-left: var(--nav-width);
+}
+#footer {
+    text-align: center;
+    border-top: 1px solid var(--layout-border-color);
+    padding: 10px 0px 10px 0px;
+}
+#logo {
+    padding-left: 10px;
+}
+#smi-container {
+    float: right;
+    height: var(--header-height);
+}
+#smi-container .smi-icons {
+    float: left;
+    width: 40px;
+    height: 100%;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    transition: background-color 600ms, width 600ms;
+}
+#smi-container .smi-icons:not(.smi-icons:last-child) {
+    border-right: 1px solid var(--layout-border-color);
+}
+#smi-container .smi-icons ion-icon {
+    font-size: 1.4rem;
+    color: #666;
+    padding-right: 10px;
+    vertical-align: sub;
+}
+#smi-container .smi-icons:nth-child(1):hover {
+    background-color: #3b5998;
+}
+#smi-container .smi-icons:nth-child(2):hover {
+    background-color: #0e76a8;
+}
+#smi-container .smi-icons:nth-child(3):hover {
+    background-color: #00acee;
+}
+#smi-container .smi-icons:nth-child(4):hover {
+    background-color: #3f729b;
+}
+#smi-container .smi-icons:nth-child(5):hover {
+    background-color: #c4302b;
+}
+#smi-container .smi-icons:nth-child(6):hover {
+    background-color: #444;
+}
+#smi-container .smi-icons:nth-child(7):hover {
+    background-color: #6567a5;
+}
+#smi-container .smi-icons:hover ion-icon {
+    color: white;
+}
+#smi-container .smi-icons:hover {
+    color: white;
+    width: 120px;
+}
